@@ -2,6 +2,83 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bhatia Cattle Feeds</title>
+  <style>
+    body { font-family: Arial, sans-serif; margin: 0; padding: 0; background: #f4f4f4; }
+    header { background: #2d6a4f; color: white; padding: 15px; text-align: center; }
+    .container { padding: 20px; }
+    .card { background: white; padding: 20px; margin: 15px 0; border-radius: 10px; box-shadow: 0 2px 5px rgba(0,0,0,0.1); }
+    label { display: block; margin: 10px 0 5px; }
+    input, select, textarea, button { width: 100%; padding: 10px; margin-bottom: 10px; border-radius: 5px; border: 1px solid #ccc; }
+    button { background: #2d6a4f; color: white; font-weight: bold; cursor: pointer; }
+    button:hover { background: #1b4332; }
+    .footer { text-align: center; padding: 15px; background: #2d6a4f; color: white; }
+  </style>
+  <script>
+    function changeLanguage() {
+      const lang = document.getElementById("lang").value;
+      if (lang === "pa") {
+        document.getElementById("title").innerText = "ਭਾਟੀਆ ਕੈਟਲ ਫੀਡਜ਼";
+        document.getElementById("feed-price").innerText = "ਫੀਡ ਕੀਮਤਾਂ";
+        document.getElementById("booking").innerText = "ਬੁਕਿੰਗ ਕਰੋ";
+      } else {
+        document.getElementById("title").innerText = "Bhatia Cattle Feeds";
+        document.getElementById("feed-price").innerText = "Feed Prices";
+        document.getElementById("booking").innerText = "Book Feed";
+      }
+    }
+  </script>
+</head>
+<body>
+  <header>
+    <h1 id="title">Bhatia Cattle Feeds</h1>
+    <p>📍 Malerkotla, Punjab | 📞 83606-63986</p>
+    <label for="lang">🌐 Select Language:</label>
+    <select id="lang" onchange="changeLanguage()">
+      <option value="en">English</option>
+      <option value="pa">Punjabi</option>
+    </select>
+  </header>
+
+  <div class="container">
+    <div class="card">
+      <h2 id="feed-price">Feed Prices</h2>
+      <ul>
+        <li>50kg Cattle Feed Sack – ₹1200</li>
+        <li>25kg Premium Feed – ₹650</li>
+        <li>Mineral Mix (10kg) – ₹400</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h2 id="booking">Book Feed</h2>
+      <form>
+        <label>Name:</label>
+        <input type="text" placeholder="Enter your name" required>
+        <label>Phone:</label>
+        <input type="text" placeholder="Enter your phone" required>
+        <label>Feed Type:</label>
+        <select>
+          <option>50kg Cattle Feed Sack</option>
+          <option>25kg Premium Feed</option>
+          <option>Mineral Mix (10kg)</option>
+        </select>
+        <label>Address:</label>
+        <textarea placeholder="Enter your delivery address"></textarea>
+        <button type="submit">Submit Booking</button>
+      </form>
+    </div>
+  </div>
+
+  <div class="footer">
+    <p>© 2025 Bhatia Cattle Feeds | Malerkotla, Punjab</p>
+  </div>
+</body>
+          </html><!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
   <title>Bhatia Cattle Feed</title>
   <style>
     body { font-family: Arial, sans-serif; text-align: center; background: #f4f4f9; }
